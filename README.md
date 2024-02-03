@@ -44,7 +44,7 @@ This analysis aims to build and evaluate machine learning models to determine th
 
 #### Machine Learning Model 1: Original Data
 - **Balanced Accuracy Score**: 94.4%
-- **Precision and Recall Scores**:
+- **Precision, Recall, and F1-Score**:
   - **Healthy Loan**:
     - Precision: 1.00
     - Recall: 1.00
@@ -53,14 +53,20 @@ This analysis aims to build and evaluate machine learning models to determine th
     - Precision: 0.87
     - Recall: 0.89
     - F1-Score: 0.88
-- **Overall**:
+- **Overall Scores**:
   - Accuracy: 99%
-  - Macro Average Precision, Recall, and F1-Score: 94%
-  - Weighted Average Precision, Recall, and F1-Score: 99%
+  - Macro Average:
+    - Precision: 94%
+    - Recall: 94%
+    - F1-Score: 94%
+  - Weighted Average:
+    - Precision: 99%
+    - Recall: 99%
+    - F1-Score: 99%
 
 #### Machine Learning Model 2: Resampled Data
 - **Balanced Accuracy Score**: 99.6%
-- **Precision and Recall Scores**:
+- **Precision, Recall, and F1-Score**:
   - **Healthy Loan**:
     - Precision: 1.00
     - Recall: 1.00
@@ -69,8 +75,14 @@ This analysis aims to build and evaluate machine learning models to determine th
     - Precision: 0.87
     - Recall: 1.00
     - F1-Score: 0.93
-- **Overall**:
+- **Overall Scores**:
   - Accuracy: 100%
-  - Macro Average Precision, Recall, and F1-Score: 94% (Precision), 100% (Recall)
-  - Weighted Average Precision, Recall, and F1-Score: 100%
+  - Macro Average:
+    - Precision: 94% (Precision)
+    - Recall: 100% (Recall)
+    - F1-Score: 96.5%
+  - Weighted Average:
+    - Precision: 100%
+    - Recall: 100%
+    - F1-Score: 100%
 
