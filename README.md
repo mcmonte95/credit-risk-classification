@@ -19,52 +19,58 @@ This analysis aims to build and evaluate machine learning models to determine th
 ### Analysis
 
 #### Data Splitting
-- The dataset was loaded from `lending_data.csv`, resulting in a DataFrame split into features (X) and labels (y), where `loan_status` served as the labels which can either be healthy (0) or high-risk (1).
-- Data was divided into training and testing sets using `train_test_split`.
+- The dataset was loaded from `lending_data.csv`, and then split into features (X) and labels (y), where `loan_status` served as the labels which can either be healthy (0) or high-risk (1).
+- The balance of the classes within the y values was then checkeded using `value_counts`. We can see an inbalance between the healthy (0) and the high-risk (1) classes.
+- Data then was divided into training and testing sets using `train_test_split` from the `scikit-learn` python library. Using this fucntion allows for a quick way to divide the training and testing data properly.
 
 #### Logistic Regression Model with Original Data
-- A logistic regression model was trained using the original training data.
+- A logistic regression model with `random_state=1` was trained using the original training data.
 - Predictions were made on the testing data to evaluate the model's performance.
+
+#### Model Evaluation
+- **Balanced Accuracy Score, Confusion Matrix and Classification Report**: Generated for the model to assess performance.
+- **Accuracy, Precision, and Recall Scores**: Pulled from the classification report.
 
 #### Resampling Training Data
 - To address class imbalance, the training data was resampled using `RandomOverSampler` from `imblearn.over_sampling`.
-- This approach aimed to increase the number of instances for the minority class in the training set, creating a balanced distribution.
+- This approach aimed increase the amount of high-risk (0) classes in the training data and balance the out the class distribution. This was confirmed when calling `value_counts` on the `y_train_resampled` data.
 
 #### Logistic Regression Model with Resampled Data
 - A second logistic regression model was trained using the resampled training data.
 - Predictions from this model were also evaluated against the testing data.
-
-#### Model Evaluation
-- **Confusion Matrix and Classification Report**: Generated for both models to assess performance.
-- **Accuracy, Precision, and Recall Scores**: Calculated to compare the effectiveness of models trained on original vs. resampled data.
+- The same model evaulation was then done on this new model.
 
 ### Results
 
 #### Machine Learning Model 1: Original Data
-- **Balanced Accuracy Score**: Not explicitly provided, but the overall accuracy is 99%.
+- **Balanced Accuracy Score**: 94.4%
 - **Precision and Recall Scores**:
   - **Healthy Loan**:
     - Precision: 1.00
     - Recall: 1.00
+    - F1-Score: 1.00
   - **High-Risk Loan**:
     - Precision: 0.87
     - Recall: 0.89
+    - F1-Score: 0.88
 - **Overall**:
   - Accuracy: 99%
-  - Macro Average Precision and Recall: 94%
-  - Weighted Average Precision and Recall: 99%
+  - Macro Average Precision, Recall, and F1-Score: 94%
+  - Weighted Average Precision, Recall, and F1-Score: 99%
 
 #### Machine Learning Model 2: Resampled Data
-- **Balanced Accuracy Score**: Not explicitly provided, but the overall accuracy is 100%.
+- **Balanced Accuracy Score**: 99.6%
 - **Precision and Recall Scores**:
   - **Healthy Loan**:
     - Precision: 1.00
     - Recall: 1.00
+    - F1-Score: 1.00
   - **High-Risk Loan**:
     - Precision: 0.87
     - Recall: 1.00
+    - F1-Score: 0.93
 - **Overall**:
   - Accuracy: 100%
-  - Macro Average Precision and Recall: 94% (Precision), 100% (Recall)
-  - Weighted Average Precision and Recall: 100%
+  - Macro Average Precision, Recall, and F1-Score: 94% (Precision), 100% (Recall)
+  - Weighted Average Precision, Recall, and F1-Score: 100%
 
