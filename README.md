@@ -1,7 +1,7 @@
 # Credit Risk Analysis Challenge
 
 ## Table of Contents
-- [Overview](#overview)
+- [Project Overview](#project-overview)
 - [Analysis](#analysis)
   - [Data Splitting](#data-splitting)
   - [Logistic Regression Model with Original Data](#logistic-regression-model-with-original-data)
@@ -10,7 +10,7 @@
   - [Model Evaluation](#model-evaluation)
 - [Analysis Report](#analysis-report)
 
-## Overview
+## Project Overview
 This analysis aims to build and evaluate machine learning models to determine the creditworthiness of borrowers. Using historical lending data from a peer-to-peer lending services company, we explore logistic regression's effectiveness in classifying loans as either healthy (0) or high-risk (1). We compare models trained on original and resampled data to identify the best approach for assessing loan risk. This analysis was done for educational purposes only and does not compromise anyones personal financial information.
 
 ## Analysis
