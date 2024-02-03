@@ -2,6 +2,7 @@
 
 ## Table of Contents
 - [Project Overview](#project-overview)
+- [Repository Guide](#repository-guide)
 - [Credit Risk Analysis Report](#credit-risk-analysis-report)
   - [Analysis](#analysis)
     - [Data Splitting](#data-splitting)
@@ -15,6 +16,16 @@
 
 ## Project Overview
 This analysis aims to build and evaluate machine learning models to determine the creditworthiness of borrowers. Using historical lending data from a peer-to-peer lending services company, we explore logistic regression's effectiveness in classifying loans as either healthy (0) or high-risk (1). We compare models trained on original and resampled data to identify the best approach for assessing loan risk. This analysis was done for educational purposes only and does not compromise anyone's personal financial information.
+
+## Repository Guide
+
+This repository contains two major components:
+
+- **Resources Folder**: This folder contains the raw data file `lending_data.csv`. This CSV file holds the historical lending activity data from a peer-to-peer lending services company, which is used for our credit risk analysis.
+
+- **Credit_Risk Folder**: Inside this folder, you will find the `credit_risk_classification.ipynb` Jupyter notebook. This notebook contains all the steps undertaken for data splitting, model training, and analysis. 
+
+The Credit Risk Analysis Report is included as part of this README.
 
 ## Credit Risk Analysis Report
 
