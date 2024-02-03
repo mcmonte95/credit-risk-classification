@@ -42,29 +42,28 @@ This analysis aims to build and evaluate machine learning models to determine th
 
 ### Results
 
-| Machine Learning Model 1: Original Data | Machine Learning Model 2: Resampled Data |
-|-----------------------------------------|------------------------------------------|
-| **Balanced Accuracy Score**: 94.4%      | **Balanced Accuracy Score**: 99.6%       |
-|                                         |                                          |
-| **Precision, Recall, and F1-Score**:    | **Precision, Recall, and F1-Score**:     |
-| **Healthy Loan**:                       | **Healthy Loan**:                        |
-| - Precision: 1.00                       | - Precision: 1.00                        |
-| - Recall: 1.00                          | - Recall: 1.00                           |
-| - F1-Score: 1.00                        | - F1-Score: 1.00                         |
-| **High-Risk Loan**:                     | **High-Risk Loan**:                      |
-| - Precision: 0.87                       | - Precision: 0.87                        |
-| - Recall: 0.89                          | - Recall: 1.00                           |
-| - F1-Score: 0.88                        | - F1-Score: 0.93                         |
-|                                         |                                          |
-| **Overall Scores**:                     | **Overall Scores**:                      |
-| - Accuracy: 99%                         | - Accuracy: 100%                         |
-| - Macro Average:                        | - Macro Average:                         |
-|   - Precision: 94%                      |   - Precision: 94%                       |
-|   - Recall: 94%                         |   - Recall: 100%                         |
-|   - F1-Score: 94%                       |   - F1-Score: 96.5%                      |
-| - Weighted Average:                     | - Weighted Average:                      |
-|   - Precision: 99%                      |   - Precision: 100%                      |
-|   - Recall: 99%                         |   - Recall: 100%                         |
-|   - F1-Score: 99%                       |   - F1-Score: 100%                       |
-
+| Logistic Regression Model 1: Original Data | Logistic Regression Model 2: Resampled Data |
+|--------------------------------------------|---------------------------------------------|
+| **Balanced Accuracy Score**: 94.4%         | **Balanced Accuracy Score**: 99.6%          |
+|                                            |                                             |
+| **Precision, Recall, and F1-Score**:       | **Precision, Recall, and F1-Score**:        |
+| **Healthy Loan**:                          | **Healthy Loan**:                           |
+| - Precision: 1.00                          | - Precision: 1.00                           |
+| - Recall: 1.00                             | - Recall: 1.00                              |
+| - F1-Score: 1.00                           | - F1-Score: 1.00                            |
+| **High-Risk Loan**:                        | **High-Risk Loan**:                         |
+| - Precision: 0.87                          | - Precision: 0.87                           |
+| - Recall: 0.89                             | - Recall: 1.00                              |
+| - F1-Score: 0.88                           | - F1-Score: 0.93                            |
+|                                            |                                             |
+| **Overall Scores**:                        | **Overall Scores**:                         |
+| - Accuracy: 99%                            | - Accuracy: 100%                            |
+| - Macro Average:                           | - Macro Average:                            |
+|   - Precision: 94%                         |   - Precision: 94%                          |
+|   - Recall: 94%                            |   - Recall: 100%                            |
+|   - F1-Score: 94%                          |   - F1-Score: 96.5%                         |
+| - Weighted Average:                        | - Weighted Average:                         |
+|   - Precision: 99%                         |   - Precision: 100%                         |
+|   - Recall: 99%                            |   - Recall: 100%                            |
+|   - F1-Score: 99%                          |   - F1-Score: 100%                          |
 
