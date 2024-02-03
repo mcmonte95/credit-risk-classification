@@ -10,6 +10,7 @@
     - [Logistic Regression Model with Resampled Data](#logistic-regression-model-with-resampled-data)
     - [Model Evaluation](#model-evaluation)
   - [Results](#results)
+  -   
 
 ## Project Overview
 This analysis aims to build and evaluate machine learning models to determine the creditworthiness of borrowers. Using historical lending data from a peer-to-peer lending services company, we explore logistic regression's effectiveness in classifying loans as either healthy (0) or high-risk (1). We compare models trained on original and resampled data to identify the best approach for assessing loan risk. This analysis was done for educational purposes only and does not compromise anyone's personal financial information.
@@ -42,6 +43,8 @@ This analysis aims to build and evaluate machine learning models to determine th
 
 ### Results
 
+#### Model Comparison
+
 | Logistic Regression Model 1: Original Data | Logistic Regression Model 2: Resampled Data |
 |--------------------------------------------|---------------------------------------------|
 | **Balanced Accuracy Score**: 94.4%         | **Balanced Accuracy Score**: 99.6%          |
@@ -67,3 +70,7 @@ This analysis aims to build and evaluate machine learning models to determine th
 |   - Recall: 99%                            |   - Recall: 100%                            |
 |   - F1-Score: 99%                          |   - F1-Score: 100%                          |
 
+
+#### Summary
+
+We can observe that both models are quite accurate, demonstrating strong overall scores in precision and recall metrics. However, they are not 100% perfect in predicting high-risk loans (classes). This limitation is more apparent in the first regression model, as it was evident even before the model training that the imbalance in the classes could affect the ability to predict a high-risk loan. This is why resampling the data proved to be a beneficial strategy, as it allowed for more extensive training on the high-risk class. This approach resulted in a more accurate model overall, with higher scores in every critical metric. I would definitely recommend Model 2 over Model 1 for use in determining loan risk. However, I would also include a disclaimer that there is still room for improvement in the model's ability to predict high-risk classes over time as new data is gathered.
